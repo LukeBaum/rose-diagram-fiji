@@ -31,7 +31,7 @@ Use the **0 Degrees is due...** dropdown to identify which direction you want 0 
 
 Click OK and a Rose Diagram should appear in a new 600x600 pixel RBG image within Fiji, much like this:
 
-![Example Rose Diagram output image](./readme_imgs/diagram.png)
+![Example Rose Diagram output image](./readme_imgs/diagram.PNG)
 
 
 
