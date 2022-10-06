@@ -35,15 +35,16 @@ Click OK and a Rose Diagram should appear in a new 600x600 pixel RBG image withi
 
 
 
-## Known Issue
+## Bug Fixes
 
-Sometimes the resultant image is incomplete; for instance the bars are not drawn or are partially drawn, and you see only a blank or partially blank circular grid. Rerunning the plugin once or twice when this happens usually resolves the issue. The root of the issue has not yet been identified.
+- The issue where the output is incomplete sometimes has been fixed.
+- Fixed a bug where the average angle line was drawn at the incorrect place on the graph when a clockwise orientation was selected.
 
 
 
 ## Improvements
 
-I can think of a handful of improvements that could be made to this aside from squashing the known issue above, but I would not call this a roadmap per se. If there is not significant demand, this project will likely not be updated outside of bug fixes.
+I can think of a handful of improvements that could be made to this, but I would not call this a roadmap per se. If there is not significant demand, this project will likely not be updated outside of bug fixes.
 
 Some ways this could be improved:
 

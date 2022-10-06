@@ -74,7 +74,8 @@ class RoseDiagram:
 		averageAngle = averageAngle[0]
 		RoseDiagram.__drawMeanAngle(processor, averageAngle, mode)
 		
-		# Return the ImagePlus.
+		# Refresh and return the ImagePlus.
+		imp.updateAndRepaintWindow()
 		return imp
 		
 	@staticmethod
@@ -356,9 +357,17 @@ class RoseDiagram:
 			zeroOffset = 180.0
 			
 		if mode in ["E", "F", "G", "H", "M", "N", "O", "P"]:
-			zeroOffset = zeroOffset * -1.0
+			# Clockwise
+			if zeroOffset > 0.0:
+				zeroOffset = zeroOffset * -1.0
+			meanAngle = 360.0 - (meanAngle + zeroOffset)
+		else:
+			# Counter-clockwise
+			meanAngle = meanAngle + zeroOffset
 			
-		meanAngle = meanAngle + zeroOffset
+		
+		print zeroOffset
+		print meanAngle
 		
 		meanBar = Arc2D.Float(40, 40, 520, 520, meanAngle - 7.5, 15.0, Arc2D.OPEN)
 		
