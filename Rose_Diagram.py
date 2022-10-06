@@ -364,10 +364,6 @@ class RoseDiagram:
 		else:
 			# Counter-clockwise
 			meanAngle = meanAngle + zeroOffset
-			
-		
-		print zeroOffset
-		print meanAngle
 		
 		meanBar = Arc2D.Float(40, 40, 520, 520, meanAngle - 7.5, 15.0, Arc2D.OPEN)
 		
